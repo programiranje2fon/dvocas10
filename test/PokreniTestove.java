@@ -9,7 +9,7 @@ public class PokreniTestove {
 	public static void main(String[] args) {
 		
 		pokreniTestoveZaKlasu(zadatak1.UcitavanjeSaTastatureTest.class);
-		pokreniTestoveZaKlasu(zadatak2.UcitavanjeSaTastature2Test.class);
+		pokreniTestoveZaKlasu(zadatak1.UcitavanjeSaTastature2Test.class);
 
 	}
 

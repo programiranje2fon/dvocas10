@@ -1,4 +1,4 @@
-package zadatak2;
+package zadatak1;
 
 public class ProveraUcitavanjaSaTastature2 {
 	

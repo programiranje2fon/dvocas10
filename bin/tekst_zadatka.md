@@ -3,38 +3,37 @@
 ##Zadatak 1
 *(radi ga laborant u saradnji sa studentima)*
 
-1. Napraviti klasu **UcitavanjeSaTastature** u paketu **zadatak1** koja ima:
+Napraviti javnu klasu **UcitavanjeSaTastature** u paketu **zadatak1** koja ima:
 
-2. Statičku metodu **ucitajString** koja učitava String sa tastature i vraća ga kao povratnu vrednost metode
+1. Javnu statičku metodu **ucitajString** koja učitava String sa tastature i vraća ga kao povratnu vrednost metode
 
-3. Napraviti klasu **ProveraUcitavanjaSaTastature** u paketu **zadatak1** koja poziva metodu za učitavanje Stringa klase **UcitavanjeSaTastature**.
+2. Javnu statičku metodu **ucitajBrojIVratiKvadrat**  koja sa tastature učitava realan broj i kao povratnu vrednost vraća kvadrat učitanog broja
 
-Dodati u klasu UcitavanjeSaTastature:
+Napraviti javnu klasu **ProbaUcitavanjaSaTastature** u paketu **zadatak1** koja proverava rad svih napisanih metoda.
 
-4. Statičku metodu **ucitajBrojIVratiKvadrat**  koja sa tastature učitava realan broj i kao povratnu vrednost vraća kvadrat učitanog broja
+Napraviti javnu klasu **UcitavanjeSaTastature2** u paketu **zadatak1** koja ima:
 
-5. Statičku metodu **ucitajBrojIProveriParnost** koja sa tastature učitava ceo broj, i vraća TRUE ili FALSE u zavisnosti da li je učitani broj deljiv sa dva. (ovu metodu studenti rade sami)
+1. Javnu statičku metodu **ucitajIVratiString** koja sa tastature učitava String koristeći klasu **Scanner** i vraća učitani string. 
 
-6. Statičku metodu **ucitajRecenicuIVratiBrojReci** koja sa tastature učitava rečenicu vraća koliko reči ima u toj rečenici. 
-(ovu metodu studenti rade sami)
+2. Javnu statičku metodu **ucitajBrojIVratiKvadrat** koja sa tastature učitava realan broj koristeći klasu **Scanner** i vraća njegov kvadrat. 
 
-7. Testirati sve napisane metode korišćenjem klase **ProveraUcitavanjaSaTastature**.
+Napraviti klasu **ProbaUcitavanjaSaTastature2** u paketu **zadatak1** koja proverava rad svih napisanih metoda klase **UcitavanjeSaTastature2**
 
 
 ##Zadatak 2
-*(radi ga laborant u saradnji sa studentima)*
+*(studenti rade sami)*
 
-1. Napraviti klasu **UcitavanjeSaTastature2** u paketu **zadatak2** koja ima:
+Dodati u klasu **UcitavanjeSaTastature**:
 
-2. Statičku metodu **ucitajIVratiString** koja sa tastature učitava String koristeći klasu **Scanner** i vraća učitani string. 
+1. Javnu statičku metodu **ucitajBrojIProveriParnost** koja sa tastature učitava ceo broj, i vraća TRUE ili FALSE u zavisnosti da li je učitani broj deljiv sa dva.
 
-3. Napraviti klasu **ProveraUcitavanjaSaTastature2** u paketu **zadatak2** koja poziva metodu za unos Stringa klase **UcitavanjeSaTastature2**
+2. Javnu statičku metodu **ucitajRecenicuIVratiBrojReci** koja sa tastature učitava rečenicu vraća koliko reči ima u toj rečenici. 
+
+Testirati sve napisane metode korišćenjem klase **ProbaUcitavanjaSaTastature**.
+
 
 Dodati u klasu **UcitavanjeSaTastature2**:
 
-4. Statičku metodu **ucitajBrojIVratiKvadrat** koja sa tastature učitava realan broj koristeći klasu **Scanner** i vraća njegov kvadrat. 
+1. Javnu statičku metodu **ucitajBrojIProveriParnost** koja sa tastature učitava ceo broj koristeći klasu **Scanner** i vraća TRUE ili FALSE u zavisnosti da li je učitani broj deljiv sa dva. (ovu metodu studenti rade sami)
 
-5. Statičku metodu **ucitajBrojIProveriParnost** koja sa tastature učitava ceo broj koristeći klasu **Scanner** i vraća TRUE ili FALSE u zavisnosti da li je učitani broj deljiv sa dva. (ovu metodu studenti rade sami)
-
-6. Testirati sve napisane metode korišćenjem klase **ProveraUcitavanjaSaTastature2**
-
+Testirati napisanu metodu iz klase **ProbaUcitavanjaSaTastature2**

@@ -18,6 +18,19 @@ import zadatak1.UcitavanjeSaTastature;
 public class UcitavanjeSaTastatureTest {
 	
 	public final String SOME_INPUT_STRING = "some simulated input string";
+	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+	private final PrintStream originalOut = System.out;
+
+	
+	@Before
+	public void setUp() throws Exception {
+	    System.setOut(new PrintStream(outContent));
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		System.setOut(originalOut);
+	}	
 	
 	@Test
 	public void metoda_ucitajString() {
@@ -53,7 +66,7 @@ public class UcitavanjeSaTastatureTest {
 	}
 
 	@Test
-	public void metoda_ucitajBrojIProveriParnost() {
+	public void metoda_ucitajBrojIProveriParnost_paran() {
 		ByteArrayInputStream in = new ByteArrayInputStream("6".getBytes());
 		InputStream sysIn = System.in;
 		System.setIn(in);
@@ -64,10 +77,16 @@ public class UcitavanjeSaTastatureTest {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-				
-		in = new ByteArrayInputStream("5".getBytes());
+					
+		System.setIn(sysIn);			
+	}
+
+	@Test
+	public void metoda_ucitajBrojIProveriParnost_neparan() {
+		ByteArrayInputStream in = new ByteArrayInputStream("5".getBytes());
+		InputStream sysIn = System.in;
 		System.setIn(in);
-		
+					
 		try {
 			boolean paran = UcitavanjeSaTastature.ucitajBrojIProveriParnost();
 			assertTrue("Metoda ucitajBrojIProveriParnost ne ucitava i ne proverava dobro parnost za neparne brojeve", (paran == false));
@@ -76,8 +95,8 @@ public class UcitavanjeSaTastatureTest {
 		}
 	
 		System.setIn(sysIn);			
-	}
-
+	}	
+	
 
 	@Test
 	public void metoda_ucitajRecenicuIspisiBrojReci() {

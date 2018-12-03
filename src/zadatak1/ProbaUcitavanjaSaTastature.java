@@ -2,7 +2,7 @@ package zadatak1;
 
 import java.io.IOException;
 
-public class ProveraUcitavanjaSaTastature {
+public class ProbaUcitavanjaSaTastature {
 	
 	public static void main(String[] args) {
 		

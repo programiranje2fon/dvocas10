@@ -29,11 +29,11 @@ Dodati u klasu **UcitavanjeSaTastature**:
 
 2. Javnu statičku metodu **ucitajRecenicuIVratiBrojReci** koja sa tastature učitava rečenicu vraća koliko reči ima u toj rečenici. 
 
-Testirati sve napisane metode korišćenjem klase **ProbaUcitavanjaSaTastature**.
+Pozvati sve napisane metode iz klase **ProbaUcitavanjaSaTastature**.
 
 
 Dodati u klasu **UcitavanjeSaTastature2**:
 
 1. Javnu statičku metodu **ucitajBrojIProveriParnost** koja sa tastature učitava ceo broj koristeći klasu **Scanner** i vraća TRUE ili FALSE u zavisnosti da li je učitani broj deljiv sa dva. (ovu metodu studenti rade sami)
 
-Testirati napisanu metodu iz klase **ProbaUcitavanjaSaTastature2**
+Pozvati napisanu metodu iz klase **ProbaUcitavanjaSaTastature2**

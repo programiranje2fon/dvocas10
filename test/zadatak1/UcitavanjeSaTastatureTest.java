@@ -20,6 +20,7 @@ public class UcitavanjeSaTastatureTest {
 	public final String SOME_INPUT_STRING = "some simulated input string";
 	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 	private final PrintStream originalOut = System.out;
+	private final InputStream originalIn = System.in;
 
 	
 	@Before
@@ -30,12 +31,12 @@ public class UcitavanjeSaTastatureTest {
 	@After
 	public void tearDown() throws Exception {
 		System.setOut(originalOut);
+		System.setIn(originalIn);	
 	}	
 	
 	@Test
 	public void metoda_ucitajString() {
 		ByteArrayInputStream in = new ByteArrayInputStream(SOME_INPUT_STRING.getBytes());
-		InputStream sysIn = System.in;
 		System.setIn(in);
 				
 		try {
@@ -44,15 +45,12 @@ public class UcitavanjeSaTastatureTest {
 					ucitanString.trim().equalsIgnoreCase(SOME_INPUT_STRING));			
 		} catch (IOException e) {
 			assertFalse("Doslo je do greske prilikom ucitavanja stringa", true);
-		}				
-		
-		System.setIn(sysIn);		
+		}					
 	}
 
 	@Test
 	public void metoda_ucitajBrojIVratiKvadrat() {
 		ByteArrayInputStream in = new ByteArrayInputStream("5".getBytes());
-		InputStream sysIn = System.in;
 		System.setIn(in);
 							
 		try {
@@ -61,14 +59,11 @@ public class UcitavanjeSaTastatureTest {
 		} catch (IOException e) {
 			assertFalse("Doslo je do greske prilikom ucitavanja broja", true);
 		}
-		
-		System.setIn(sysIn);		
 	}
 
 	@Test
 	public void metoda_ucitajBrojIProveriParnost_paran() {
 		ByteArrayInputStream in = new ByteArrayInputStream("6".getBytes());
-		InputStream sysIn = System.in;
 		System.setIn(in);
 				
 		try {
@@ -76,15 +71,12 @@ public class UcitavanjeSaTastatureTest {
 			assertTrue("Metoda ucitajBrojIProveriParnost ne ucitava i ne proverava dobro parnost za parne brojeve", (paran == true));
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
-					
-		System.setIn(sysIn);			
+		}		
 	}
 
 	@Test
 	public void metoda_ucitajBrojIProveriParnost_neparan() {
 		ByteArrayInputStream in = new ByteArrayInputStream("5".getBytes());
-		InputStream sysIn = System.in;
 		System.setIn(in);
 					
 		try {
@@ -92,16 +84,13 @@ public class UcitavanjeSaTastatureTest {
 			assertTrue("Metoda ucitajBrojIProveriParnost ne ucitava i ne proverava dobro parnost za neparne brojeve", (paran == false));
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
-	
-		System.setIn(sysIn);			
+		}			
 	}	
 	
 
 	@Test
 	public void metoda_ucitajRecenicuIspisiBrojReci() {
 		ByteArrayInputStream in = new ByteArrayInputStream("Ova recenica ima pet reci".getBytes());
-		InputStream sysIn = System.in;
 		System.setIn(in);
 		
 		try {
@@ -109,9 +98,7 @@ public class UcitavanjeSaTastatureTest {
 			assertTrue("Metoda ucitajRecenicuIVratiBrojReci ne broji dobro reci", (brojReci == 5));			
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
-	
-		System.setIn(sysIn);			
+		}		
 	}
 
 }

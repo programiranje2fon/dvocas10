@@ -8,6 +8,7 @@ public class UcitavanjeSaTastature {
 	
 	static String ucitajString() throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		System.out.print("Unesite tekst: ");
 		String s = br.readLine();
 		return s;
 	}

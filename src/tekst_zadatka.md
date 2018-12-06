@@ -5,7 +5,7 @@
 
 Napraviti javnu klasu **UcitavanjeSaTastature** u paketu **zadatak1** koja ima:
 
-1. Javnu statičku metodu **ucitajString** koja učitava String sa tastature i vraća ga kao povratnu vrednost metode.
+1. Javnu statičku metodu **ucitajIVratiString** koja učitava String sa tastature i vraća ga kao povratnu vrednost metode.
 Ukoliko dodje do greške prilikom učitavanja baciti odgovarajući izuzetak iz metode.
 
 2. Javnu statičku metodu **ucitajBrojIVratiKvadrat**  koja sa tastature učitava realan broj i kao povratnu vrednost vraća kvadrat učitanog broja. Ukoliko dodje do greške prilikom učitavanja baciti odgovarajući izuzetak iz metode.

@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class UcitavanjeSaTastature {
 	
-	static String ucitajString() throws IOException {
+	static String ucitajIVratiString() throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.print("Unesite tekst: ");
 		String s = br.readLine();
@@ -32,7 +32,6 @@ public class UcitavanjeSaTastature {
 			return true;
 		else
 			return false;
-		
 	}
 
 	static int ucitajRecenicuIVratiBrojReci() throws IOException {

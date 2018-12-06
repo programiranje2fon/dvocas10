@@ -34,12 +34,12 @@ public class UcitavanjeSaTastatureTest {
 	}	
 	
 	@Test
-	public void metoda_ucitajString() {
+	public void metoda_ucitajIVratiString() {
 		ByteArrayInputStream in = new ByteArrayInputStream(SOME_INPUT_STRING.getBytes());
 		System.setIn(in);
 				
 		try {
-			String ucitanString = UcitavanjeSaTastature.ucitajString();
+			String ucitanString = UcitavanjeSaTastature.ucitajIVratiString();
 			assertTrue("Metoda ne ucitava i vraca string ",
 					ucitanString.trim().equalsIgnoreCase(SOME_INPUT_STRING));			
 		} catch (IOException e) {

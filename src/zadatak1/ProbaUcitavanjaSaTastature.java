@@ -8,7 +8,7 @@ public class ProbaUcitavanjaSaTastature {
 		
 		
 		try {
-			String s = UcitavanjeSaTastature.ucitajString();
+			String s = UcitavanjeSaTastature.ucitajIVratiString();
 			System.out.println(s);
 		} catch (IOException e) {
 			System.out.println("Greska prilikom ucitavanja stringa!");

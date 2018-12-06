@@ -31,7 +31,7 @@ public class UcitavanjeSaTastature2Test {
 	}	
 	
 	@Test
-	public void metoda_ucitajString() {
+	public void metoda_ucitajIVratiString() {
 		ByteArrayInputStream in = new ByteArrayInputStream(SOME_INPUT_STRING.getBytes());
 		System.setIn(in);
 

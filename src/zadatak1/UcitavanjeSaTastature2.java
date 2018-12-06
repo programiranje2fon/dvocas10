@@ -6,7 +6,7 @@ public class UcitavanjeSaTastature2 {
 	
 	static String ucitajIVratiString() {
 		Scanner s = new Scanner(System.in);
-		System.out.print("Unesite poruku: ");
+		System.out.print("Unesite tekst: ");
 		String tekst = s.nextLine();
 		return tekst;
 	}

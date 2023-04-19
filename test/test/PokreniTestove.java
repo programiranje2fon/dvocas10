@@ -1,6 +1,7 @@
 package test;
 
 import java.lang.reflect.Method;
+
 import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -10,6 +11,7 @@ import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
+import ispravka_koda.UcitavanjeSaTastatrue3Test;
 import zadatak1.UcitavanjeSaTastature2Test;
 import zadatak1.UcitavanjeSaTastatureTest;
 
@@ -22,6 +24,8 @@ public class PokreniTestove {
 	public static void main(String[] args) {
 		runTestsForClass(UcitavanjeSaTastatureTest.class);
 		runTestsForClass(UcitavanjeSaTastature2Test.class);
+		runTestsForClass(UcitavanjeSaTastatrue3Test.class);
+
 	}
 
 	/**

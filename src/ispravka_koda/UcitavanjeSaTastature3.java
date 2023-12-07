@@ -7,7 +7,7 @@ public class UcitavanjeSaTastature3 {
 	public static void ucitajIIzracunajNumeroloskiBroj() {
 		Scanner s = new Scanner(System.in);
 		System.out.println("Unesite dan,mesec i godinu u 3 reda");
-		int brojSaSvimCiframa = (s.nextInt() * 100 + s.nextInt()) * 1000 + s.nextInt();
+		int brojSaSvimCiframa = (s.nextInt() * 100 + s.nextInt()) * 10000 + s.nextInt();
 		int sumaCifara;
 		do {
 			sumaCifara = 0;
